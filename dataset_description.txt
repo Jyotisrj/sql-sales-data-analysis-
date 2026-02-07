@@ -1,0 +1,19 @@
+Dataset: Retail Sales Dataset
+
+Tables Used:
+1. Customers Table
+   - customer_id
+   - customer_name
+   - city
+
+2. Sales Table
+   - order_id
+   - customer_id
+   - product
+   - quantity
+   - price
+   - order_date
+
+Purpose:
+To perform SQL-based sales analysis including joins, aggregation,
+data cleaning, and business insight generation.
