@@ -34,10 +34,10 @@ INSERT INTO sales VALUES
 (5,104,'Monitor',2,12000,'2025-01-11'),
 (6,102,'Mouse',NULL,500,'2025-01-12');
 
--- 5. Remove duplicate records
+-- 5. Query1: Remove duplicate records
 SELECT DISTINCT * FROM customers;
 
--- 6. Handle NULL values using COALESCE
+-- 6.  Query2: Handle NULL values using COALESCE
 SELECT 
     order_id,
     customer_id,
@@ -46,12 +46,12 @@ SELECT
     price
 FROM sales;
 
--- 7. Data extraction using WHERE
+-- 7.  Query3:Data extraction using WHERE
 SELECT * 
 FROM sales
 WHERE price > 1000;
 
--- 8. JOIN Customers and Sales tables
+-- 8.  Query4:JOIN Customers and Sales tables
 SELECT 
     s.order_id,
     c.customer_name,
@@ -63,7 +63,7 @@ FROM sales s
 JOIN customers c
 ON s.customer_id = c.customer_id;
 
--- 9. Aggregation using GROUP BY (Customer-wise spending)
+-- 9.  Query5:Aggregation using GROUP BY (Customer-wise spending)
 SELECT 
     c.customer_name,
     SUM(s.quantity * s.price) AS total_spent
@@ -72,7 +72,7 @@ JOIN customers c
 ON s.customer_id = c.customer_id
 GROUP BY c.customer_name;
 
--- 10. City-wise sales analysis
+-- 10.  Query6:City-wise sales analysis
 SELECT 
     c.city,
     SUM(s.quantity * s.price) AS city_sales
@@ -80,3 +80,4 @@ FROM sales s
 JOIN customers c
 ON s.customer_id = c.customer_id
 GROUP BY c.city;
+
