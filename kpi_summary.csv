@@ -1,0 +1,27 @@
+KPI,Value
+Total unique orders (full dataset),99441.0
+Orders with item data,98666.0
+Canceled orders (full dataset),625.0
+"Cancellation rate (full dataset, %)",0.63
+Canceled orders (with item data),461.0
+"Cancellation rate (with item data, %)",0.47
+Average delivery duration (whole calendar days),12.5
+Eligible delivered orders (orders_with_items),96470.0
+"On-time orders (orders_with_items, full timestamps)",88644.0
+"Late orders (orders_with_items, full timestamps)",7826.0
+"On-time delivery rate (orders_with_items, %)",91.89
+"Late delivery rate (orders_with_items, %)",8.11
+"Eligible orders (full timestamps, full dataset)",96476.0
+"On-time orders (full timestamps, full dataset)",88649.0
+"Late orders (full timestamps, full dataset)",7827.0
+"On-time delivery rate (full timestamps, %)",91.89
+"Late delivery rate (full timestamps, %)",8.11
+Average actual minus estimated delivery (days),-11.18
+Average delay among late orders (days),9.55
+Average purchase-to-carrier time (hours),77.79
+Average purchase-to-approval time (hours),10.42
+Total freight cost (BRL),2251909.54
+Average freight per order (BRL),22.82
+Median freight per order (BRL),17.17
+Product-only AOV (BRL),137.75
+AOV including freight (BRL),160.58
